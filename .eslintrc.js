@@ -31,6 +31,8 @@ module.exports = {
     ],
     'camelcase': 2,
     'id-length': 2,
-    'keyword-spacing': 1
+    'keyword-spacing': 1,
+    'space-infix-ops': ["error", {"int32Hint": false}],
+     
   }
 };
