@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/loraineamaral/validCPF-lib#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "install": "^0.12.2",
     "mocha": "^6.1.4"
   },
