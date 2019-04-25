@@ -9,3 +9,11 @@ describe("CPF-lib", () =>{
     });
   });
 });
+
+describe("CPF-lib", () =>{
+  describe("cpfValidator", () =>{
+    it("CPF Válido", () =>{
+      expect(chess.chessBattle("12345678909")).to.equal("CPF Válido");
+    });
+  });
+});
