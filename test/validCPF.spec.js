@@ -9,10 +9,10 @@ describe("cpfValidator", () => {
   it("Testa CPF Válido", () => {
     expect(cpfNumber.cpfValidator("12345678909")).to.equal(true);
   });
-  it("Testa comprimento grande do CPF", () => {
+  it("Testa comprimento grande para CPF", () => {
     expect(cpfNumber.cpfValidator("123456789091")).to.equal(false);
   });
-  it("Testa comprimento pequeno do CPF", () => {
+  it("Testa comprimento pequeno para CPF", () => {
     expect(cpfNumber.cpfValidator("12345678")).to.equal(false);
   });
   it("Testa se números são todos iguais", () => {

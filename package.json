@@ -1,16 +1,16 @@
 {
-  "name": "validcpf-lib",
+  "name": "cpfvalidator-la",
   "version": "1.0.0",
   "description": "Biblioteca js para validação de CPF",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha nyc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loraineamaral/validCPF-lib.git"
   },
-  "author": "",
+  "author": "Loraine Amaral",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/loraineamaral/validCPF-lib/issues"
