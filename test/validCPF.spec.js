@@ -4,22 +4,22 @@ let cpfNumber = require("../lib/index");
 
 describe("cpfValidator", () => {
   it("Testa CPF Inválido", () => {
-    expect(cpfNumber.cpfValidator("12345678910")).to.equal(false);
+    expect(cpfNumber("12345678910")).to.equal(false);
   });
   it("Testa CPF Válido", () => {
-    expect(cpfNumber.cpfValidator("12345678909")).to.equal(true);
+    expect(cpfNumber("12345678909")).to.equal(true);
   });
   it("Testa comprimento grande para CPF", () => {
-    expect(cpfNumber.cpfValidator("123456789091")).to.equal(false);
+    expect(cpfNumber("123456789091")).to.equal(false);
   });
   it("Testa comprimento pequeno para CPF", () => {
-    expect(cpfNumber.cpfValidator("12345678")).to.equal(false);
+    expect(cpfNumber("12345678")).to.equal(false);
   });
   it("Testa se números são todos iguais", () => {
-    expect(cpfNumber.cpfValidator("22222222222")).to.equal(false);
+    expect(cpfNumber("22222222222")).to.equal(false);
   });
   it("Testa se CPF tem letras", () => {
-    expect(cpfNumber.cpfValidator("123456789re")).to.equal(false);
+    expect(cpfNumber("123456789re")).to.equal(false);
   });
 });
 
